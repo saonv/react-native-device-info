@@ -20,7 +20,7 @@
 #pragma mark - Public methods
 
 + (NSString *)uid {
-    return [[[DeviceUID alloc] initWithKey:@"deviceUID"] uid];
+    return [[UIDevice currentDevice].identifierForVendor UUIDString];
 }
 
 #pragma mark - Instance methods
